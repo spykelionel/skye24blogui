@@ -1,0 +1,29 @@
+:root {
+  --color-primary: #1c5cff;
+  --color-secondary: #969696;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border-style: none;
+  outline: none;
+}
+
+ul a {
+  color: var(--color-secondary, #969696);
+}
+
+input:active,
+input:focus {
+  border-style: none;
+  border-color: none;
+}
