@@ -22,23 +22,29 @@ const tools = [
   "Self care",
 ];
 
-topics.map((topic) => {
-  let li = document.createElement("li");
-  li.textContent = topic;
-  blogTopics.appendChild(li);
-});
+function appendChildELements(
+  parent,
+  listItems,
+  child = "li",
+  attributes = [{ name: "class", value: "" }]
+) {
+  listItems.map((item) => {
+    let element = document.createElement(child);
+    element.textContent = item;
+    attributes.map((attr) => {
+      element.setAttribute(attr.name, attr.value);
+    });
+    parent.appendChild(element);
+  });
+}
 
-tools.map((tool) => {
-  let li = document.createElement("li");
-  li.textContent = tool;
-  guideAndTools.appendChild(li);
-});
-
-//  <span class="">Ai</span>
-
-_topics.map((topic) => {
-  let span = document.createElement("span");
-  span.textContent = topic;
-  span.setAttribute("class", "br-5 p5 b-1 hover-grey text-tertiary");
-  trendingTopics.appendChild(span);
-});
+appendChildELements(blogTopics, topics);
+appendChildELements(guideAndTools, tools);
+appendChildELements(
+  trendingTopics,
+  _topics,
+  (child = "span"),
+  (attributes = [
+    { attribute: "class", value: "br-5 p5 b-1 hover-grey text-tertiary" },
+  ])
+);
