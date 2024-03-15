@@ -29,6 +29,11 @@ ul a {
 
 input:active,
 input:focus {
-  border-style: none;
+  /* border-style: none;   */
   border-color: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
