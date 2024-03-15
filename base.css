@@ -10,10 +10,6 @@
   text-decoration: none;
 }
 
-body {
-  /* margin: 0 5rem; */
-}
-
 li {
   list-style: none;
 }
@@ -29,7 +25,6 @@ ul a {
 
 input:active,
 input:focus {
-  /* border-style: none;   */
   border-color: none;
 }
 
