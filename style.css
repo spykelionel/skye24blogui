@@ -152,7 +152,9 @@
 .relative {
   position: relative;
 }
-
+.absolute {
+  position: absolute;
+}
 .self-center {
   align-self: center;
 }
@@ -233,26 +235,26 @@ input[type="search"] {
   border-radius: 15px;
 }
 
-.input {
-  position: relative;
-}
 .input input[type="search"] {
   width: calc(100% - 30px); /* Adjust the width to leave space for the button */
-  padding-left: 30px; /* Ensure space for the search icon */
+  padding: 10px 40px; /* Ensure space for the search icon */
 }
 
-.input button[type="submit"] {
-  position: absolute;
+.top-0 {
   top: 0;
-  left: 0;
-  width: 30px; /* Adjust as needed */
-  height: 100%;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
-
-.input button[type="submit"] i {
-  font-size: 18px; /* Adjust the size of the icon */
-  color: #333; /* Adjust the color of the icon */
+.left-5 {
+  left: 5px;
+}
+.left-10 {
+  left: 10px;
+}
+.w25 {
+  width: 25px;
+}
+.h-full {
+  height: 100%;
+}
+.pointer {
+  cursor: pointer;
 }
