@@ -31,6 +31,7 @@ function appendChildELements(
   listItems.map((item) => {
     let element = document.createElement(child);
     element.textContent = item;
+    element.classList = attributes.map((att) => att.value);
     attributes.map((attr) => {
       element.setAttribute(attr.name, attr.value);
     });
