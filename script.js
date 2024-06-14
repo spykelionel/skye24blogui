@@ -11,7 +11,15 @@ const topics = [
   "Work",
 ];
 
-const _topics = ["Design Thinking", "Technology", "Web3", "Programming", "Ai"];
+const _topics = [
+  "Design Thinking",
+  "Technology",
+  "Web3",
+  "Programming",
+  "Ai",
+  "IOT",
+  "Robotics",
+];
 
 const tools = [
   "Guidelines",

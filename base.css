@@ -20,7 +20,7 @@ input {
 }
 
 ul a {
-  color: var(--color-secondary, #969696);
+  color: var(--color-secondary);
 }
 
 input:active,
