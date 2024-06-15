@@ -6,7 +6,7 @@
 .wrap {
   flex-wrap: wrap;
 }
-.column {
+.flex-column {
   flex-direction: column;
 }
 .space-between {
@@ -25,18 +25,19 @@
   align-items: baseline;
 }
 
-.p2 {
-  padding: 2px;
+.p-2 {
+  padding: 0.13rem;
 }
-.p5 {
-  padding: 5px;
+.p-5 {
+  padding: 0.3rem;
 }
 .p-1 {
   padding: 1rem;
 }
-.p-2 {
-  padding: 2rem;
+.p6 {
+  padding: 0.375rem;
 }
+
 .px-2 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -75,9 +76,7 @@
 .p-1\/14 {
   padding: 0.14rem;
 }
-.p6 {
-  padding: 6px;
-}
+
 
 .m-2 {
   margin: 2rem;
@@ -127,10 +126,10 @@
   gap: 0;
 }
 .gap-2 {
-  gap: 2px;
+  gap:  0.13rem;
 }
 .gap-16 {
-  gap: px;
+  gap: 16px;
 }
 .gap-32 {
   gap: 32px;
@@ -163,10 +162,10 @@
 .w-100 {
   width: 100%;
 }
-.wm-50 {
+.max-width-50 {
   max-width: 50%;
 }
-.hm-70 {
+.max-height-70 {
   max-height: 70vh;
 }
 
@@ -208,10 +207,22 @@
 }
 
 .text-large {
-  font-size: 20px;
+  font-size: 1.3rem;
+}
+.rounded-1{
+  border-radius: 1px;
+}
+.rounded-2{
+  border-radius: 2px;
+}
+.rounded-3{
+  border-radius: 3px;
+}
+.rounded-4 {
+  border-radius: 4px;
 }
 
-.btn {
+.rounded-5{
   border-radius: 5px;
 }
 .btn-primary:hover {
@@ -232,7 +243,7 @@ input[type="search"] {
   border: 2px solid #dadada;
   border-radius: 15px;
   width: calc(100% - 30px); /* Adjust the width to leave space for the button */
-  padding: 10px 40px; /* Ensure space for the search icon */
+  padding: o.6rem 2.5rem; /* Ensure space for the search icon */
 }
 
 .top-0 {
@@ -244,7 +255,7 @@ input[type="search"] {
 .left-10 {
   left: 10px;
 }
-.w25 {
+.width-25 {
   width: 25px;
 }
 .h-full {
