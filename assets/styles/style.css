@@ -129,11 +129,11 @@
 .gap-2 {
   gap: 2px;
 }
-.gap-1r {
-  gap: 1rem;
+.gap-16 {
+  gap: px;
 }
-.gap-2r {
-  gap: 2rem;
+.gap-32 {
+  gap: 32px;
 }
 .gap-3 {
   gap: 3px;
