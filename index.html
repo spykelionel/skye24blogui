@@ -11,54 +11,57 @@
   <body>
     <!-- Header -->
 
-    <header class="flex justify-evenly items-center p-6">
-      <div class="logo">
-        <a href="#" class="flex justify-evenly items-center gap-5">
-          <img src="./assets/images/Group 11.svg" alt="smallincon" srcset="" />
-          <h2 class="font-bold">Coranu</h2>
-        </a>
-      </div>
-      <div class="flex items-center gap-4">
-        <input
-          type="search"
-          placeholder="Search"
-          class="block p-2 text-sm border border-tertiary-color rounded-2xl w-"
-        />
-        <img
-          class="w-6 h-6 pointer"
-          src="assets/images/search.svg"
-          alt=""
-          srcset=""
-        />
-      </div>
+   <header class="flex justify-evenly items-center p-6">
+ <div class="logo">
+<a href="#" class="flex justify-evenly items-center gap-5">
+ <img src="./assets/images/Group 11.svg" alt="smallincon" srcset="" />
+ <h2 class="font-bold">Coranu</h2>
+ </a>
+ </div>
+<div class="flex items-center gap-4 ">
+ <input
+ type="search"
+placeholder="Search"
+ class="block p-2 text-sm border border-tertiary-color rounded-2xl  "
+ />
+ <img
+ class="w-6 h-6 pointer"
+ src="assets/images/search.svg"
+alt=""
+srcset=""
+ />
+ </div>
 
-      <nav>
-        <ul class="flex space-between gap-8">
-          <li class=""><a href="#">Home</a></li>
-          <li class=""><a href="#">Market</a></li>
-          <li class=""><a href="#" class="font-bold">Blog</a></li>
-          <li class=""><a href="#">Career</a></li>
-          <li class="">
-            <a
-              href="#"
-              class="px-3 py-1 text-white text-sm rounded-2xl bg-primary-color"
-              >Hiring</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <a
-          href="#"
-          class="rounded-2xl bg-primary-color p-2 text-white text-lg font-bold"
-          >Getting started
-          <span
-            class="center self-center font-bold text-white relative text-lg py-1/3"
-            >&rarr;</span
-          ></a
-        >
-      </div>
-    </header>
+<nav class="md:flex hidden items-center justify-evenly " id="navbar-cta">
+ <ul class="flex space-between gap-8">
+ <li class=""><a href="#">Home</a></li>
+ <li class=""><a href="#">Market</a></li>
+ <li class=""><a href="#" class="font-bold">Blog</a></li>
+<li class=""><a href="#">Career</a></li>
+ <li class="">
+ <a href="#"
+ class="px-3 py-1 text-white text-sm rounded-2xl bg-primary-color"
+ >Hiring</a >
+ </li>
+ </ul>
+ </nav>
+ <div>
+<a href="#"
+class="rounded-2xl bg-primary-color p-2 text-white text-lg font-bold">Getting started
+ <span
+ class="center self-center font-bold text-white relative text-lg py-1/3"
+>&rarr;</span></a>
+<button id="menu-toggle" data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   " aria-controls="navbar-cta" aria-expanded="false">
+ <span class="sr-only">Open main menu</span>
+ <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+ <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+</svg>
+ </button>
+</div>
+</header>
+
+
+
 
     <!-- First section -->
     <section class="flex justify-evenly items-center gap-0 my-6">
@@ -107,7 +110,7 @@
       <div class="  max-w-half  max-h-screen lg:max-h-70 overflow-hidden overflow-y-scroll">
         <div class="flex flex-col gap-4 my-4">
           <p class="text-primary-color py-4">Trending Topics</p>
-          <div id="trending-topics" class="flex items-center flex-wrap gap-1">
+          <div id="trending-topics" class="flex  text-sm items-center flex-wrap gap-1">
             <!-- Inject from JS -->
           </div>
         </div>
@@ -168,7 +171,7 @@
       <div class="flex justify-evenly">
         <div class="flex flex-col gap-4">
           <p class="text-primary-color">Stay up to date</p>
-          <h1 class="text-4xl  font-bold">Join our  Newsletter</h1>
+          <h1 class=" text-4xl  font-bold  ">Join our  Newsletter</h1>
           <div class="flex gap-4">
             <input
               class="p-3 border rounded-lg"

@@ -42,3 +42,10 @@ _topics.map((topic) => {
   span.setAttribute("class", "rounded-2xl p-2 border hover:grey text-tertiary-color");
   trendingTopics.appendChild(span);
 });
+//menu
+const menuToggleBtn = document.getElementById("menu-toggle");
+const navigation = document.getElementById("navbar-cta");
+
+menuToggleBtn.addEventListener("click", () => {
+  navigation.classList.toggle("hidden");
+});
