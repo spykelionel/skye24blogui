@@ -39,6 +39,6 @@ tools.map((tool) => {
 _topics.map((topic) => {
   let span = document.createElement("span");
   span.textContent = topic;
-  span.setAttribute("class", "br-5 p5 b-1 hover-grey text-tertiary");
+  span.setAttribute("class", "rounded-2xl p-2 border hover:grey text-tertiary-color");
   trendingTopics.appendChild(span);
 });
