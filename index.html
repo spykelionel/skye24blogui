@@ -4,42 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link rel="stylesheet" href="/assets/styles/output.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="flex space-evenly align-center py-1">
+
+    <header class="flex justify-evenly items-center p-6">
       <div class="logo">
-        <a href="#" class="flex space-evenly align-center gap-5">
+        <a href="#" class="flex justify-evenly items-center gap-5">
           <img src="./assets/images/Group 11.svg" alt="smallincon" srcset="" />
           <h2 class="font-bold">Coranu</h2>
         </a>
       </div>
-      <div class="flex input relative">
-        <input type="search" placeholder="Search" class="w-100 px-2" />
+      <div class="flex items-center gap-4">
+        <input
+          type="search"
+          placeholder="Search"
+          class="block p-2 text-sm border border-tertiary-color rounded-2xl w-"
+        />
         <img
-          class="absolute top-0 left-10 h-full pointer width-25"
+          class="w-6 h-6 pointer"
           src="assets/images/search.svg"
           alt=""
           srcset=""
         />
       </div>
+
       <nav>
-        <ul class="flex space-between gap-32">
+        <ul class="flex space-between gap-8">
           <li class=""><a href="#">Home</a></li>
           <li class=""><a href="#">Market</a></li>
           <li class=""><a href="#" class="font-bold">Blog</a></li>
           <li class=""><a href="#">Career</a></li>
           <li class="">
-            <a href="#" class="rounded-5 p-1/14 br-5 btn-primary">Hiring</a>
+            <a
+              href="#"
+              class="px-2 text-white text-sm rounded-2xl bg-primary-color"
+              >Hiring</a
+            >
           </li>
         </ul>
       </nav>
       <div>
-        <a href="#" class="rounded-5 btn-primary p-1 text-md font-bold"
+        <a
+          href="#"
+          class="rounded-2xl bg-primary-color p-2 text-white text-lg font-bold"
           >Getting started
           <span
-            class="center self-center font-bold text-white relative text-large py-1/3"
+            class="center self-center font-bold text-white relative text-lg py-1/3"
             >&rarr;</span
           ></a
         >
@@ -47,18 +59,26 @@
     </header>
 
     <!-- First section -->
-    <section class="flex space-between align-center gap-0 px-6/5 my-2">
-      <div class="left flex flex-column gap-16">
-        <p><a href="#" class="default-link">See Coranu Tutorial &nearr;</a></p>
-        <h1>Insights from our team</h1>
-        <p class="text-secondary">
+    <section class="flex justify-evenly items-center gap-0 my-6">
+      <div class="flex flex-col gap-4">
+        <p>
+          <a href="#" class="text-primary-color underline"
+            >See Coranu Tutorial &nearr;</a
+          >
+        </p>
+        <h1 class="text-lg font-bold">Insights from our team</h1>
+        <p class="text-secondary-color">
           Powerful Trading Tools and Features for Experienced Investors
         </p>
       </div>
-      <div class="flex input relative">
-        <input type="search" placeholder="Search" class="w-100 px-2" />
+      <div class="flex items-center gap-4">
+        <input
+          type="search"
+          placeholder="Search"
+          class="block p-2 text-sm border border-tertiary-color rounded-2xl w-"
+        />
         <img
-          class="absolute top-0 left-10 h-full pointer width-25"
+          class="w-6 h-6 pointer"
           src="assets/images/search.svg"
           alt=""
           srcset=""
@@ -67,66 +87,71 @@
     </section>
 
     <!-- Second section -->
-    <section class="flex space-evenly align-base px-6/5 my-2">
+    <section class="flex justify-evenly items-baseline my-8 px-6\/5">
       <div class="">
-        <div class="flex flex-column gap-5">
-          <p class="text-primary py-2">Blog Topics</p>
-          <ul id="blog-topics" class="flex flex-column gap-4 my-1">
+        <div class="flex flex-col gap-1">
+          <p class="text-primary-color py-8">Blog Topics</p>
+          <ul id="blog-topics" class="flex flex-col gap-1 my-4">
             <!-- Inject From JS -->
           </ul>
         </div>
-        <div class="flex flex-column gap-5 my-1">
-          <p class="text-primary py-2">Guide and Tools</p>
-          <ul id="guide-and-tools" class="flex flex-column gap-4 my-1">
+        <div class="flex flex-col gap-1 my-4">
+          <p class="text-primary-color py-8">Guide and Tools</p>
+          <ul id="guide-and-tools" class="flex flex-col gap-1 my-4">
             <!-- Inject From JS -->
           </ul>
         </div>
       </div>
-      <div class="max-width-50 max-height-50 overflow-hidden overflow-y">
-        <div class="flex flex-column gap-16 my-2">
-          <p class="text-primary py-1">Trending Topics</p>
-          <div id="trending-topics" class="flex align-center wrap gap-4">
+      <div class=" max-w-1/2 max-h-screen lg:max-h-70 overflow-hidden overflow-y-scroll">
+        <div class="flex flex-col gap-4 my-8">
+          <p class="text-primary-color py-4">Trending Topics</p>
+          <div id="trending-topics" class="flex items-center flex-wrap gap-1">
             <!-- Inject from JS -->
           </div>
         </div>
-        <div class="flex my-2">
-          <div class="left flex flex-column gap-16">
-            <p class="text-primary">Mar 1</p>
+        <div class="flex my-8">
+          <div class="flex flex-col gap-4">
+            <p class="text-primary-color">Mar 1</p>
             <h1>
               Powerful Trading Tools and Features for Experienced Investors
             </h1>
-            <p class="text-secondary">
+            <p class="text-secondary-color">
               I’m always trying to think of new and interesting business ideas.
               I generally try to come up with ideas by thinking of what I would
               want to do or see in the world. Then, I try to find reasons why it
               wouldn’t work...
             </p>
-            <div class="flex align-center gap-5">
-              <span class="br-5 p-5 b-1 hover-grey text-tertiary">Tools</span>
-              <span class="text-tertiary">By Mark Tuchel</span>
+            <div class="flex items-center gap-1">
+              <span
+                class="rounded-2xl p-1 border border-secondary-color hover:bg-grey text-tertiary-color"
+                >Tools</span
+              >
+              <span class="text-tertiary-color">By Mark Tuchel</span>
               <span>.</span>
-              <span class="text-primary">7 min read</span>
+              <span class="text-primary-color">7 min read</span>
             </div>
           </div>
           <div class="right">
             <img src="assets/images/Frame 23.svg" alt="frame" srcset="" />
           </div>
         </div>
-        <div class="flex my-2">
-          <div class="left flex flex-column gap-16">
-            <p class="text-primary">Jan 2</p>
+        <div class="flex my-8">
+          <div class="left flex flex-col gap-4">
+            <p class="text-primary-color">Jan 2</p>
             <h1>We are implementing AI and Technology</h1>
-            <p class="text-secondary">
+            <p class="text-secondary-color">
               I’m always trying to think of new and interesting business ideas.
               I generally try to come up with ideas by thinking of what I would
               want to do or see in the world. Then, I try to find reasons why it
               wouldn’t work...
             </p>
-            <div class="flex align-center gap-5">
-              <span class="br-5 p-5 b-1 hover-grey text-tertiary">Ai</span>
-              <span class="text-tertiary">By Harry Oland</span>
+            <div class="flex items-center gap-1">
+              <span class="rounded-2xl p-1 border hover:bg-grey text-tertiary"
+                >Ai</span
+              >
+              <span class="text-tertiary-color">By Harry Oland</span>
               <span>.</span>
-              <span class="text-primary">4 min read</span>
+              <span class="text-primary-color">4 min read</span>
             </div>
           </div>
           <div class="right">
@@ -137,27 +162,27 @@
     </section>
 
     <!-- Footer -->
-    <footer class="px-6/5 my-2">
-      <div class="flex space-between">
-        <div class="flex flex-column gap-16">
-          <p class="text-primary">Stay up to date</p>
-          <h1>Join our Newsletter</h1>
-          <div class="flex gap-5">
+    <footer class=" my-8">
+      <div class="flex justify-evenly">
+        <div class="flex flex-col gap-4">
+          <p class="text-primary-color">Stay up to date</p>
+          <h1 class="text-3xl  font-bold">Join our Newsletter</h1>
+          <div class="flex gap-4">
             <input
-              class="p-1 b-1 br-3"
+              class="p-5 border rounded-lg"
               type="text"
               placeholder="Enter your email"
             />
             <button
-              class="rounded-5 btn-primary px-2 font-bold text-md"
+              class="rounded-lg text-white bg-primary-color p-5 font-bold "
               type="button"
             >
               Submit
             </button>
           </div>
-          <p class="text-tertiary">*You can unsubscribe anytime</p>
+          <p class="text-tertiary-color">*You can unsubscribe anytime</p>
         </div>
-        <div class="right">
+        <div class="">
           <img src="assets/images/Group 12.svg" alt="group12" srcset="" />
         </div>
       </div>
