@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="/assets/styles/output.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+
   </head>
   <body>
     <!-- Header -->
@@ -39,7 +41,7 @@
           <li class="">
             <a
               href="#"
-              class="px-2 text-white text-sm rounded-2xl bg-primary-color"
+              class="px-3 py-1 text-white text-sm rounded-2xl bg-primary-color"
               >Hiring</a
             >
           </li>
@@ -66,7 +68,7 @@
             >See Coranu Tutorial &nearr;</a
           >
         </p>
-        <h1 class="text-lg font-bold">Insights from our team</h1>
+        <h1 class="text-2xl font-bold">Insights from our team</h1>
         <p class="text-secondary-color">
           Powerful Trading Tools and Features for Experienced Investors
         </p>
@@ -87,9 +89,9 @@
     </section>
 
     <!-- Second section -->
-    <section class="flex  justify-evenly items-baseline my-8 px-6\/5">
-      <div class="w-full">
-        <div class="flex flex-col gap-1">
+    <section class="flex w-screen justify-evenly items-baseline my-8 px-6\/5">
+      <div class="">
+        <div class="flex flex-col  gap-1">
           <p class="text-primary-color py-8">Blog Topics</p>
           <ul id="blog-topics" class="flex flex-col gap-1 my-4">
             <!-- Inject From JS -->
@@ -102,17 +104,17 @@
           </ul>
         </div>
       </div>
-      <div class=" max-w-1/2  overflow-hidden overflow-y-scroll">
-        <div class="flex flex-col gap-4 my-8">
+      <div class="  max-w-half  max-h-screen lg:max-h-70 overflow-hidden overflow-y-scroll">
+        <div class="flex flex-col gap-4 my-4">
           <p class="text-primary-color py-4">Trending Topics</p>
           <div id="trending-topics" class="flex items-center flex-wrap gap-1">
             <!-- Inject from JS -->
           </div>
         </div>
         <div class="flex my-8">
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col w-2/3 gap-4">
             <p class="text-primary-color">Mar 1</p>
-            <h1>
+            <h1 class="text-2xl font-bold">
               Powerful Trading Tools and Features for Experienced Investors
             </h1>
             <p class="text-secondary-color">
@@ -131,14 +133,14 @@
               <span class="text-primary-color">7 min read</span>
             </div>
           </div>
-          <div class="right">
+          <div class="right w-half w-1/2">
             <img src="assets/images/Frame 23.svg" alt="frame" srcset="" />
           </div>
         </div>
         <div class="flex my-8">
-          <div class="left flex flex-col gap-4">
+          <div class="left flex flex-col w-2/3 gap-4">
             <p class="text-primary-color">Jan 2</p>
-            <h1>We are implementing AI and Technology</h1>
+            <h1 class="text-2xl font-bold">We are implementing AI and Technology</h1>
             <p class="text-secondary-color">
               I’m always trying to think of new and interesting business ideas.
               I generally try to come up with ideas by thinking of what I would
@@ -154,7 +156,7 @@
               <span class="text-primary-color">4 min read</span>
             </div>
           </div>
-          <div class="right">
+          <div class="right w-half">
             <img src="assets/images/Frame 25.svg" alt="frame" srcset="" />
           </div>
         </div>
@@ -166,15 +168,15 @@
       <div class="flex justify-evenly">
         <div class="flex flex-col gap-4">
           <p class="text-primary-color">Stay up to date</p>
-          <h1 class="text-3xl  font-bold">Join our Newsletter</h1>
+          <h1 class="text-4xl  font-bold">Join our  Newsletter</h1>
           <div class="flex gap-4">
             <input
-              class="p-5 border rounded-lg"
+              class="p-3 border rounded-lg"
               type="text"
               placeholder="Enter your email"
             />
             <button
-              class="rounded-lg text-white bg-primary-color p-5 font-bold "
+              class="rounded-lg text-white bg-primary-color p-3 font-bold "
               type="button"
             >
               Submit

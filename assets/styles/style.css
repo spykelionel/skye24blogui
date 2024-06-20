@@ -7,3 +7,9 @@
   padding-left: 6.5rem;
   padding-right: 6.5rem;
 }
+ .max-w-half{
+  max-width: 50%;
+ }
+ .w-half{
+   width: 50%;
+ }
